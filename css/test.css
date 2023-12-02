@@ -10,3 +10,7 @@
 h1 {                           /* selector specificity 3rd */
     color: blue;
 }
+
+strong {                       /* This is a different tag all togather so this wins */ 
+    color : orange;
+}
