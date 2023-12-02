@@ -1,0 +1,10 @@
+
+
+/* show large text content in 3 columns side by side with seperator */
+
+#content p {
+    column-count: 3;
+    column-gap: 50px;
+    column-rule: 1px solid grey;
+    text-align: justify;
+}
