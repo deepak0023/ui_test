@@ -1,0 +1,15 @@
+.box {
+    width: 20px;
+    margin: 30px;
+    padding: 40px;
+    border: 2px solid #000;
+    display: inline-block;            /* can have block and inline properties */
+}
+
+/* 
+block element always takes 100% of space in the screen and and inline elements stack one after the other . 
+
+inline element width and migin top and down does not work
+
+inline-block has best of both the worlds
+*/ 
