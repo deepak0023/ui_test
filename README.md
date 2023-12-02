@@ -1,8 +1,12 @@
-# ui_test
-Repository to test the UI features
+# Description
 
-This covers basic UI Features
+### This is a sample repository to test the UI features
 
-html Features
-Css Features
-JS Features
+This basically is supposed to contain
+* html Features
+* Css Features
+* JS Features
+
+Present set of branches
+* main
+* css-position
