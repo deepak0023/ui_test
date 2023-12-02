@@ -1,0 +1,75 @@
+.box {
+    width: 70%;
+    padding: 40px;                /* this brings height to each box */
+    border: 0px solid #000;
+}
+
+/* Floating element */
+
+#first_box {                          /* relative to the block position, stays in dom flow */
+    background-color : red;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+#second_box {                       /* created relative to support absolute under it */
+    background-color : green;
+    position : relative;
+    top: 50px;
+    left: 50px;
+    height: 200px;
+}
+
+#third_box {                        /* out of document flow , top and left with respect to parent relative element */
+    background-color : blue;
+    position: absolute;
+    width: 50%;                     /* width also based on parent relative element */
+    top: 10px;
+    left: 10px;
+}
+
+#fourth_box {                      /* out of document flow, top and left with respect to window element */                
+    background-color : orange;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    width: 70%;                    /* width based on window element */
+    z-index: 100;
+}
+
+#fifth_box {                      /* out of document flow, top and left with respect to window element */                
+    background-color : purple;
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    width: 50%;                    /* width based on window element */
+}
+
+#sixth_box {                      /* relative element can be put inside absolute */                
+    background-color : yellow;
+    position: relative;
+    left: 20px;
+    width: 20%;                   /* width based on parent absolute element */
+}
+
+
+#seventh_box {                      /* fixed element cannot be put inside absolute element */                
+    background-color : black;
+    position: fixed;
+    left: 20px;
+    top: 10px;
+}
+
+
+
+/* 
+Relative and absolute element can be nexted within each other but the fixed element is alwars with respect to the window element
+
+Relative have the element in the document flow
+
+Absolute and fixed takes element out of dom
+
+Fixed cannot be nexted inside absolute or relative
+
+*/
