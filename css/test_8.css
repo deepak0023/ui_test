@@ -1,0 +1,49 @@
+
+#center-div {                    /* Centering div */
+    width: 500px;
+    margin: 0px auto;
+    border: 1px solid;
+    padding: 5px;
+}
+
+.box {
+    max-width: 45px;
+    width: 25%;
+    padding: 40px;
+    border: 0px solid #000;
+}
+
+/* Floating element */
+
+#first_box {
+    background-color : red;
+    float: left;
+}
+
+#second_box {
+    background-color : green;
+    float: left;
+}
+
+#third_box {
+    background-color : blue;
+    float: left;
+}
+
+#fourth_box {
+    background-color : orange;
+    float: left;
+}
+
+.floating-section:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#content {
+    background-color: grey;
+    border: 1px solid red;
+    margin-top: 5px;
+    padding: 5px;
+}
