@@ -2,3 +2,50 @@ a:hover {                    /* we have click and checked option too */
     color: red;
     background-color: blue;
 }
+
+a:visited {                    /* liks that are already visited */
+    color: green;
+}
+
+a:active {                    /* when you press hold on click it activates */
+    color: yellow;
+}
+
+* {                           /* universal selector overrides to every element over default styles */
+    margin: 0;
+    padding: 0;
+    color: black; 
+}
+
+body {                           /* body element does not override to every element over default styles */
+    text-decoration: underline; 
+}
+
+
+#main-content :nth-child(odd) {   /* odd elements */ 
+    color : red;
+}
+
+#main-content :nth-child(even) {   /* even elements */
+    color : blue;
+}
+
+#main-content :nth-child(3n+1) {   /* formula */
+    background-color : grey;   
+}
+
+#main-content :first-child {        /* first child */
+    color : red;
+}
+
+#main-content :last-child {         /* last child */
+    color : brown;
+}
+
+#main-content p:first-of-type {      /* focus on first p tag */
+    color : purple;
+}
+
+#main-content p:last-of-type {        /* focus on last p tag */
+    color : yellow;
+}
