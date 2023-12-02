@@ -4,7 +4,7 @@
 }
 
 .main_content h1 {            /* selector specificity 2nd */
-    color : green;
+    color : green !important;    /* Added important property here so this wins */
 }
 
 h1 {                           /* selector specificity 3rd */
@@ -12,5 +12,5 @@ h1 {                           /* selector specificity 3rd */
 }
 
 strong {                       /* This is a different tag all togather so this wins */ 
-    color : orange;
+    color : orange;          /* This is not affected by the important property on top*/
 }
