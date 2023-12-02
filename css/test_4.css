@@ -1,3 +1,17 @@
-#main-content p {
+/* Combinators */
+
+.main-content p {      /* descenedent selectors affects all nested dom elements under it */
     color : green;
+}
+
+.main-content > p {  /* Child selector anly affects one level deep */
+    color : red;
+}
+
+.main-content > h1 + p {  /* Adjacent selector anly affects first adjacent p element to h1 */
+    color : blue;
+}
+
+.main-content > h1 ~ p {  /* General sibling selecter affects all adjacent p element to h1 */
+    color : orange;          /* comment this one to see other selctor property */
 }
