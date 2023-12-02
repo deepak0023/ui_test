@@ -1,0 +1,23 @@
+h1 {                /* general h1 tag */ 
+    color: red;
+}
+
+h1[id] {              /* h1 having id attribute */
+    color: green;
+}
+
+h1[class] {            /* h1 having class attribute */
+    color: blue;
+}
+
+h1[class~="four"] {       /* pattern matching, part of the class is "four" */
+    color: orange;
+}
+
+h1[class$="five"] {       /* class ending with "five" */
+    color: maroon;
+}
+
+h1[class^="tail"] {       /* class starting with "tail" */
+    color: brown;
+}
