@@ -1,4 +1,12 @@
-h1#first_headding {
+.main_content h1#first_headding {          /* selector specificity 1st */
     color: red;
     text-decoration: underline;
+}
+
+.main_content h1 {            /* selector specificity 2nd */
+    color : green;
+}
+
+h1 {                           /* selector specificity 3rd */
+    color: blue;
 }
