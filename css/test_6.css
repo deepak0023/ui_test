@@ -1,0 +1,4 @@
+a:hover {                    /* we have click and checked option too */
+    color: red;
+    background-color: blue;
+}
