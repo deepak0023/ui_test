@@ -72,4 +72,6 @@ Absolute and fixed takes element out of dom
 
 Fixed cannot be nexted inside absolute or relative
 
+Z-index of present dom works based on the parent div z-index
+
 */
